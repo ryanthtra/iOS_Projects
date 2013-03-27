@@ -53,7 +53,7 @@
 
 - (int) valueInDollars
 {
-    int total_value = valueInDollars;   // First, get its own value.
+    int total_value = [self valueInDollars];   // First, get its own value.
     
     for (id item in m_containerItems)   // Second, add value of each item
     {
@@ -67,10 +67,10 @@
 {
     NSString* descriptionString =
     [[NSString alloc] initWithFormat: @"%@ (%@): Worth $%d, recorded on %@, contains: %@",
-     itemName,
-     serialNumber,
+     [self itemName],
+     [self serialNumber],
      [self valueInDollars],
-     dateCreated,
+     [self dateCreated],
      m_containerItems];
     
     return descriptionString;

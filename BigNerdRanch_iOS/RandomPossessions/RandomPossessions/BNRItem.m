@@ -10,6 +10,9 @@
 
 @implementation BNRItem
 
+@synthesize itemName;
+@synthesize containedItem, container, serialNumber, valueInDollars, dateCreated;
+
 /// CLASS METHODS ///
 
 + (id) randomItem
@@ -92,41 +95,11 @@
 
 // INSTANCE METHODS
 
-- (void) setItemName: (NSString*) str
+- (void) setContainedItem: (BNRItem*) i
 {
-    itemName = str;
+    containedItem = i;
+    [i setContainer: self];
 }
-- (NSString*) itemName
-{
-    return itemName;
-}
-
-
-- (void) setSerialNumber: (NSString*) str
-{
-    serialNumber = str;
-}
-- (NSString*) serialNumber
-{
-    return serialNumber;
-}
-
-
-- (void) setValueInDollars: (int) i
-{
-    valueInDollars = i;
-}
-- (int) valueInDollars
-{
-    return valueInDollars;
-}
-
-
-- (NSDate*) dateCreated
-{
-    return dateCreated;
-}
-
 
 - (NSString*) description
 {
@@ -138,6 +111,11 @@
                                             dateCreated];
     return descriptionString;
     
+}
+
+- (void) dealloc
+{
+    NSLog(@"Destroyed: %@", self);
 }
 
 @end

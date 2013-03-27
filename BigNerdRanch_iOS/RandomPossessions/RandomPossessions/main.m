@@ -16,25 +16,40 @@ int main(int argc, const char * argv[])
     @autoreleasepool
     {
         // Create a mutable array object, store its address in items variable
-        NSMutableArray* items = [[NSMutableArray alloc] init];
+//        NSMutableArray* items = [[NSMutableArray alloc] init];
         
-        for (int i = 0; i < 10; i++)
-        {
-            BNRItem* p = [BNRItem randomItem];
-            [items addObject: p];
-        }
+//        for (int i = 0; i < 10; i++)
+//        {
+//            BNRItem* p = [BNRItem randomItem];
+//            [items addObject: p];
+//        }
+
+        BNRItem* backpack = [[BNRItem alloc] init];
+        [backpack setItemName: @"backpack"];
+//        [items addObject: backpack];
         
-        BNRContainer* my_container = [[BNRContainer alloc] initWithItemName: @"My Container"
-                                                             valueInDollars: 111
-                                                               serialNumber: @"T6M9Z"];
+        BNRItem* calculator = [[BNRItem alloc] init];
+        [calculator setItemName: @"Calculator"];
+//        [items addObject: calculator];
         
-        [my_container setContainerItems: items];
+        [backpack setContainedItem: calculator];
         
-        NSLog(@"%@", my_container);
+//        BNRContainer* my_container = [[BNRContainer alloc] initWithItemName: @"My Container"
+//                                                             valueInDollars: 111
+//                                                               serialNumber: @"T6M9Z"];
+        
+//        [my_container setContainerItems: items];
+        
+//        NSLog(@"%@", my_container);
         
         // Destroy the array pointed to by items
-        items = nil;
-        my_container = nil;
+//        NSLog(@"Setting items to nil...");
+//        items = nil;
+        backpack = nil;
+        NSLog(@"Container: %@", [calculator container]);
+        calculator = nil;
+        
+//        my_container = nil;
     }
     return 0;
 }
