@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4AE4D6717051574000C5DB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AE4D6617051574000C5DB9 /* CoreLocation.framework */; };
+		C4AE4D6917052DBE000C5DB9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AE4D6817052DBE000C5DB9 /* MapKit.framework */; };
+		C4AE4D6F17055268000C5DB9 /* BNRMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AE4D6E17055268000C5DB9 /* BNRMapPoint.m */; };
 		C4F3DD781702AFDA0032B8CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F3DD771702AFDA0032B8CB /* UIKit.framework */; };
 		C4F3DD7A1702AFDA0032B8CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F3DD791702AFDA0032B8CB /* Foundation.framework */; };
 		C4F3DD7C1702AFDA0032B8CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F3DD7B1702AFDA0032B8CB /* CoreGraphics.framework */; };
@@ -18,12 +21,15 @@
 		C4F3DD8E1702AFDA0032B8CB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4F3DD8D1702AFDA0032B8CB /* Default-568h@2x.png */; };
 		C4F3DD911702AFDA0032B8CB /* WhereamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3DD901702AFDA0032B8CB /* WhereamiViewController.m */; };
 		C4F3DD941702AFDA0032B8CB /* WhereamiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F3DD921702AFDA0032B8CB /* WhereamiViewController.xib */; };
-		C4F3DD9B1702B1F20032B8CB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F3DD9A1702B1F20032B8CB /* CoreLocation.framework */; };
 		C4F3DDCC1702D3FD0032B8CB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4F3DDCB1702D3FD0032B8CB /* Icon.png */; };
 		C4F3DDCE1702D4030032B8CB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4F3DDCD1702D4030032B8CB /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4AE4D6617051574000C5DB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C4AE4D6817052DBE000C5DB9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C4AE4D6D17055268000C5DB9 /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMapPoint.h; sourceTree = "<group>"; };
+		C4AE4D6E17055268000C5DB9 /* BNRMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMapPoint.m; sourceTree = "<group>"; };
 		C4F3DD741702AFDA0032B8CB /* Whereami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whereami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F3DD771702AFDA0032B8CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C4F3DD791702AFDA0032B8CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,7 +46,6 @@
 		C4F3DD8F1702AFDA0032B8CB /* WhereamiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereamiViewController.h; sourceTree = "<group>"; };
 		C4F3DD901702AFDA0032B8CB /* WhereamiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereamiViewController.m; sourceTree = "<group>"; };
 		C4F3DD931702AFDA0032B8CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhereamiViewController.xib; sourceTree = "<group>"; };
-		C4F3DD9A1702B1F20032B8CB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C4F3DDCB1702D3FD0032B8CB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		C4F3DDCD1702D4030032B8CB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F3DD9B1702B1F20032B8CB /* CoreLocation.framework in Frameworks */,
+				C4AE4D6917052DBE000C5DB9 /* MapKit.framework in Frameworks */,
+				C4AE4D6717051574000C5DB9 /* CoreLocation.framework in Frameworks */,
 				C4F3DD781702AFDA0032B8CB /* UIKit.framework in Frameworks */,
 				C4F3DD7A1702AFDA0032B8CB /* Foundation.framework in Frameworks */,
 				C4F3DD7C1702AFDA0032B8CB /* CoreGraphics.framework in Frameworks */,
@@ -82,7 +88,8 @@
 		C4F3DD761702AFDA0032B8CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C4F3DD9A1702B1F20032B8CB /* CoreLocation.framework */,
+				C4AE4D6817052DBE000C5DB9 /* MapKit.framework */,
+				C4AE4D6617051574000C5DB9 /* CoreLocation.framework */,
 				C4F3DD771702AFDA0032B8CB /* UIKit.framework */,
 				C4F3DD791702AFDA0032B8CB /* Foundation.framework */,
 				C4F3DD7B1702AFDA0032B8CB /* CoreGraphics.framework */,
@@ -99,6 +106,8 @@
 				C4F3DD901702AFDA0032B8CB /* WhereamiViewController.m */,
 				C4F3DD921702AFDA0032B8CB /* WhereamiViewController.xib */,
 				C4F3DD7E1702AFDA0032B8CB /* Supporting Files */,
+				C4AE4D6D17055268000C5DB9 /* BNRMapPoint.h */,
+				C4AE4D6E17055268000C5DB9 /* BNRMapPoint.m */,
 			);
 			path = Whereami;
 			sourceTree = "<group>";
@@ -189,6 +198,7 @@
 				C4F3DD841702AFDA0032B8CB /* main.m in Sources */,
 				C4F3DD881702AFDA0032B8CB /* WhereamiAppDelegate.m in Sources */,
 				C4F3DD911702AFDA0032B8CB /* WhereamiViewController.m in Sources */,
+				C4AE4D6F17055268000C5DB9 /* BNRMapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +321,7 @@
 				C4F3DD991702AFDA0032B8CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
